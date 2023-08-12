@@ -26,7 +26,9 @@
 
 // Examples:
 var age = 25; // this is dynamic
+
 let name = "John"; // this is dynamic also
+
 const PI = 3.14; // this can't be changed
 
 
