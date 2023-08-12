@@ -27,4 +27,5 @@ let myNewName = "David👌"
 
 console.log(myName); // output: Tomi😊
 
-myName = m
+myName = myNewName
+console.log(myName)
