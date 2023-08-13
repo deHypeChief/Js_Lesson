@@ -16,6 +16,9 @@ let myData = {
 // Homework 1
 // Create your own variables and their data type in the 
 // assigment folder. The data should be relative to bank data
+// you can leave the arrary and objects
+// data needed
+// firstName, secondName, pin , age, isActive, currentBank, fullName, country and state
 
 
 
@@ -26,6 +29,25 @@ let myNewName = "David👌"
 
 
 console.log(myName); // output: Tomi😊
-
 myName = myNewName
-console.log(myName)
+console.log(myName) // output: David👌
+
+
+// <Working With Strings>
+
+let FirstName = 'John'
+let SecondName = 'Doe'
+let hisAge = 24
+
+let FullName = FirstName + SecondName 
+console.log(FullName);
+
+let editedName = FirstName + " " + SecondName
+
+console.log(FullName);
+console.log(editedName);
+console.log(editedName , " ", hisAge)
+
+
+// Homework 2
+// using your data in HomeWork1 use the data to generate an info about the bank user
