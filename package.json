@@ -1,0 +1,18 @@
+{
+  "name": "learnjs",
+  "version": "1.0.0",
+  "description": "Learning javascript",
+  "main": "./lib/main.js",
+  "type": "module",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "learn" : "node ./main/Varaiables",
+    "task": "node ./lib/main.js",
+    "dev" : "node ./task/challange.js",
+    "sandbox" : "node ./task/sandbox.js"
+  },
+  "author": "deHypeChief",
+  "license": "MIT"
+}
