@@ -1,7 +1,6 @@
-function sandbox() {
-  console.log("Welcome to the sandbox");
-  // your code here
-  console.log("================================\n");
+function challenge() {
+    // write your code here...
+  console.log('======================================================================\n');
 
   console.log("TASK ONE\n");
 
@@ -47,4 +46,4 @@ function sandbox() {
     Then her activeness turn ${isActive}
     `);
 }
-sandbox();
+challenge()

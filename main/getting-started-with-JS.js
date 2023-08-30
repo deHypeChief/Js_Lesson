@@ -1,8 +1,7 @@
-// Hello 👌
-
+//Hello 👌=
 // **JavaScript Overview:**
 // JavaScript is a widely-used programming language used for web development, adding 
-// interactivity and functionality to websites and applications. 
+// interactivity and functionality to websites and applications.
 
 // **Usage of JavaScript:**
 // JavaScript is used in various contexts:
