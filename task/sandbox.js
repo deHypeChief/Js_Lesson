@@ -14,32 +14,7 @@ function sandbox() {
         let clientBalance = 1500000;
         let isActive = false;
 
-  
   console.log(
-    "\tTASK TWO\n"
-  );
-
-  let name = "Scot Allen";
-  let age = 56;
-  let occupation = "Trader";
-  const hobby = ["football", "coding", "movies",];
-  const profile = {
-    name: name,
-    age: age,
-    occupation: occupation,
-    hobby: hobby,
-    doSmth: function() {
-      return `\tmy name is ${this.name}. \n
-              I'm ${this.age} year old. \n
-              My hobbies are ${this.hobby[0]}, ${this.hobby[1]}, and ${this.hobby[2]}.`;
-    }
-  }
-
-  console.log(profile.doSmth());
-
-  console.log(
-
-
     `The datatype outputs goes below: \n
 
     =============================================\n
