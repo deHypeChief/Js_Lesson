@@ -1,18 +1,19 @@
 {
-  "name": "learnjs",
+  "name": "Js_Lesson",
   "version": "1.0.0",
-  "description": "Learning javascript",
-  "main": "./lib/main.js",
-  "type": "module",
-  "directories": {
-    "lib": "lib"
-  },
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "learn" : "node ./main/Varaiables",
+    "learn": "node ./main/Varaiables",
     "task": "node ./lib/main.js",
-    "dev" : "node ./task/challange.js",
-    "sandbox" : "node ./task/sandbox.js"
+    "dev": "node ./task/challange.js",
+    "sandbox": "node ./task/sandbox.js"
   },
-  "author": "deHypeChief",
-  "license": "MIT"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "Js_Lesson": "link:",
+    "http-server": "^14.1.1"
+  }
 }
