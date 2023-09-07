@@ -7,13 +7,13 @@
     "learn": "node ./main/Varaiables",
     "task": "node ./lib/main.js",
     "dev": "node ./task/challange.js",
-    "sandbox": "node ./task/sandbox.js"
+    "sandbox": "node ./task/sandbox.js",
+    "start": "http-server ./public -o"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "Js_Lesson": "link:",
     "http-server": "^14.1.1"
   }
 }
