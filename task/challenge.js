@@ -1,7 +1,5 @@
 function challenge() {
     // write your code here...
-<<<<<<< HEAD
-=======
   console.log('======================================================================\n');
 
   console.log("TASK ONE\n");
@@ -16,7 +14,7 @@ function challenge() {
         let isActive = false;
 
   console.log(
-    `The datatype outputs goes below: \n
+    `The datatype outputs b goes below: \n
 
     =============================================\n
 
@@ -75,6 +73,5 @@ function challenge() {
     console.log(profile.doSmth());
 
   
->>>>>>> 14c882931cdfe6cc83a12a00dacf9e1818f7d0eb
 }
 challenge();

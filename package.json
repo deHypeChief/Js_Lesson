@@ -4,11 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "learn": "node ./main/Varaiables",
-    "task": "node ./lib/main.js",
     "dev": "node ./task/challange.js",
     "sandbox": "node ./task/sandbox.js",
-    "start": "http-server ./public -o"
+    "start": "http-server ./webNotes -o -s"
   },
   "keywords": [],
   "author": "",
