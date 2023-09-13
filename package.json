@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node ./task/challange.js",
+    "dev": "node ./task/challenge.js",
     "sandbox": "node ./task/sandbox.js",
     "start": "http-server ./Webnote -o -s"
   },
