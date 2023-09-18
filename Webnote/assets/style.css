@@ -1,10 +1,10 @@
 @font-face {
     font-family: sub;
-    src: url('./mouis.ttf');
+    src: url('./fonts/mouis.ttf');
 }
 @font-face {
     font-family: mai;
-    src: url('./Poppins-SemiBold.ttf');
+    src: url('./fonts/Poppins-SemiBold.ttf');
 }
 *{
     margin: 0;
@@ -30,8 +30,12 @@ p{
 pre{
     line-height: 2rem;
 }
+button{
+    border: none;
+    background: none;
+}
 .HeroMain{
-    height: 60vh;
+    height: 48vh;
     /* background-color: black; */
     color: white;
     overflow: hidden;
@@ -52,10 +56,11 @@ pre{
     justify-content: center;
     height: 100%;
     padding: 80px 150px;
-    background: rgba(0, 0, 0, 0.275);
+    background: rgba(0, 0, 0, 0.52);
 }
 .lessonSpace{
     padding: 80px 170px;
+    background: rgb(249, 247, 247);
 }
 .footer{
     display: flex;
@@ -63,12 +68,150 @@ pre{
     justify-content: space-between;
     color: white;
     padding: 22px 100px;
-    
 }
 .footer p{
     font-size: 20px;
 }
 
+
+
+.mainWrap{
+    display: flex;
+}
+.left{
+    width: 25vw;
+    position: fixed;
+    /* background: #000; */
+}
+.right{
+    width: 100%;
+    margin-left: 24vw;
+}
+
+
+.overWrap{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.leftWrap{
+    padding: 40px 30px;
+}
+.headerLogo{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.nextTopic{
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.nextHeader{
+    font-size: small;
+    text-transform: uppercase;
+}
+.tocWrap{
+    padding:10px;
+}
+.nextText{
+    font-size: 25px;
+    margin: -14px 0 0;
+}
+
+.topicLinks{
+    padding: 5px 0 0;
+}
+.tLink{
+    padding: 12px 18px;
+}
+.tLink:hover{
+    background-color: rgba(237, 237, 237, 0.442);
+}
+.linkTopic{
+    text-decoration: none;
+    font-size: large;
+}
+
+.tocs{
+    height: 59vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 0 0 200px;
+}
+.tocs::-webkit-scrollbar{
+    display: none;
+}
+
+.overBotton{
+    transform: translateY(-30px);
+}
+.overBotton button{
+    background: white;
+    color: black;
+    border: none;
+    padding: 16px 20px;
+    font-size: 18px;
+}
+
+
+.challangeOverlay{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    display: none;
+}
+.coWrap{
+    height: 400px;
+    width: 450px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.36);
+    padding:50px 40px;
+    
+}
+.CoList{
+    height: 230px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.CoList::-webkit-scrollbar{
+    background-color: rgb(217, 217, 217);
+    width: 10px;
+    border-radius: 10px;
+}
+.CoList::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 0, 0);
+    width: 5px;
+    border-radius: 16px;
+}
+.textSectionCO p{
+    font-size: 18px;
+}
 .challanges{
-    padding: 230px 170px 0;
+    padding:40px 20px;
+}
+.challanges h2{
+    /* padding: 230px 170px 0; */
+    font-size: 20px;
+}
+.challanges p{
+    /* padding: 230px 170px 0; */
+    font-size: 17px;
+}
+.topActionCO{
+    display: flex;
+    justify-content: right;
+}
+.Cobox{
+    height: 20px;
+    width: 20px;
+    background: red;
 }

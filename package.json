@@ -1,12 +1,12 @@
 {
-  "name": "Js_Lesson",
+  "name": "js-lesson",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "node ./task/challange.js",
     "sandbox": "node ./task/sandbox.js",
-    "start": "http-server ./Webnote -o -s"
+    "start": "http-server ./lessons/Webnote -o -s"
   },
   "keywords": [],
   "author": "",
