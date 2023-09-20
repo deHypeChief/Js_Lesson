@@ -11,7 +11,7 @@ To get your notes
 npm start
 ```
 
-To run the new assigment file run
+To run the new assignment file run
 ```javascript
 npm run dev
 ```

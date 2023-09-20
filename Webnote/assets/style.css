@@ -6,29 +6,28 @@
     font-family: mai;
     src: url('./fonts/Poppins-SemiBold.ttf');
 }
-*{
-    margin: 0;
-    font-family: sub;
-    color: inherit;
+* {
+  margin: 0;
+  font-family: sub;
+  color: inherit;
 }
 
+h1 {
+  font-family: mai;
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+  font-family: mai;
+  padding-bottom: 20px;
+}
+p {
+  font-size: 24px;
+  padding-bottom: 10px;
+}
 
-h1{
-    font-family: mai;
-    font-size: 3rem;
-}
-h2{
-    font-size: 2rem;
-    font-family: mai;
-    padding-bottom: 20px;
-}
-p{
-    font-size: 24px;
-    padding-bottom: 10px;
-}
-
-pre{
-    line-height: 2rem;
+pre {
+  line-height: 2rem;
 }
 button{
     border: none;
@@ -41,13 +40,14 @@ button{
     overflow: hidden;
     position: relative;
 }
-.HeroMain img{
-    transform: translateY(-1100px);
-    z-index: -1;
-    position: absolute;
+.HeroMain img {
+  transform: translateY(-1100px);
+  z-index: -1;
+  position: absolute;
 }
-.headinHreo{
-    text-transform: capitalize;
+
+.headinHreo {
+  text-transform: capitalize;
 }
 .overlay{
     z-index: 2;
@@ -69,8 +69,8 @@ button{
     color: white;
     padding: 22px 100px;
 }
-.footer p{
-    font-size: 20px;
+.footer p {
+  font-size: 20px;
 }
 
 
