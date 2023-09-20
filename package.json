@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "node ./task/challenge.js",
     "sandbox": "node ./task/sandbox.js",
-    "start": "http-server ./lessons/Webnote -o -s"
+    "start": "http-server -o ./Webnote/lessons/index.html -s"
   },
   "keywords": [],
   "author": "",
