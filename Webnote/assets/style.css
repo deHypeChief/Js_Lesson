@@ -213,5 +213,6 @@ button{
 .Cobox{
     height: 20px;
     width: 20px;
-    background: red;
+    background: url(./images/close.png);
+    background-size: contain;
 }
