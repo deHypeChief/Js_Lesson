@@ -1,6 +1,7 @@
 function sandbox() {
   console.log("\n\n\nWelcome to the sandbox\n\n\n");
   // your Test code here
+  /*
   console.log('======================================================================\n');
 
   console.log("TASK ONE\n");
@@ -71,8 +72,9 @@ function sandbox() {
       }
     }
   
-    console.log(profile.doSmth());
+    console.log(profile.doSmth());*/
 }
-
 sandbox();
 //node sandbox.js
+//npm run sandbox
+//npm run dev

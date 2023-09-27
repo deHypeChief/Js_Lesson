@@ -1,6 +1,7 @@
 function challenge() {
     // write your code here...
 
+  /*
   console.log("\n\n\nTASK ONE: calculate the max value\n\n\n");
   //This is the first task
   const numbers = [3, 99, 21, 57, 1];
@@ -73,5 +74,80 @@ function challenge() {
   }
 
   console.log(isPalindromeCheck("hannah"));
+  */
+  
+  console.log("\n\nSum of Multiples exercise\n\n");
+
+  function calSum(n) {
+    let numberAccumulator = 0;
+    for (let i = 3; i < n; i++) {
+      if (i % 3 !== 0 && i % 5 !== 0) {
+        continue;
+      }
+      numberAccumulator += i;
+    }
+    console.log(numberAccumulator);
+  }
+
+  calSum(10);
+
+  console.log("\n\n=====Factorial using recursion=====\n\n");
+
+  function calFactorial(n) {
+    if (n === 0) {
+      return 1;
+    }
+
+    return n * calFactorial(n - 1);
+  }
+
+  console.log(calFactorial(10));
+
+  console.log("\n\n=====Reverse a String=====\n\n");
+
+  function reverseString(str) {
+    let rev = str.split("").reverse();
+    for (let i = 0; i > rev.length; i++) {
+      return rev[i];
+    }
+
+    console.log(rev.join(""));
+  }
+
+  function reverseStr(str) {
+    let string = str.split('');
+    let returnedString = "";
+    for (let i = str.length - 1; i >= 0; i--) {
+      returnedString += string.join('')[i];
+    }
+
+    console.log(returnedString)
+  }
+
+  reverseString("lemon");
+
+  console.log("\n\n or \n\n");
+
+  reverseStr("Mango");
+
+  console.log("\n\n=====FizzBuzz Challenge=====\n\n");
+
+  function fizzBuzz(n) {
+    let fizzBuzz = "";
+
+    for (let i = 1; i <= n; i++) {
+      if (i % 5 === 0 && i % 3 === 0) {
+        console.log("FizzBuzz");
+      } else if (i % 5 === 0) {
+        console.log("Buzz");
+      } else if (i % 3 === 0) {
+        console.log("Fizz");
+      } else {
+        console.log(i);
+      }
+    }
+  }
+
+  fizzBuzz(100);
 }
 challenge();
