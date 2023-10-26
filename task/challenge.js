@@ -1,5 +1,5 @@
 function challenge() {
-    // write your code here...
+  // write your code here...
 
   /*
   console.log("\n\n\nTASK ONE: calculate the max value\n\n\n");
@@ -75,7 +75,7 @@ function challenge() {
 
   console.log(isPalindromeCheck("hannah"));
   */
-  
+  /*
   console.log("\n\nSum of Multiples exercise\n\n");
 
   function calSum(n) {
@@ -149,5 +149,75 @@ function challenge() {
   }
 
   fizzBuzz(100);
+  */
+
+  const teachers = [
+    {
+      name: "Thomas",
+      subject: "English",
+      age: 56,
+      status: "married",
+      class: "jss2",
+      fullTime: true,
+      sex: "male",
+      introduceYourself: function () {
+        return `Hello my name is ${this.name}, and I am ${this.age} years old.`
+      }
+    },
+    {
+      name: "Clark",
+      subject: "Mathematics",
+      age: 34,
+      status: "dating",
+      class: "ss3",
+      fullTime: true,
+      sex: "male",
+      introduceYourself: function () {
+        return `Hello my name is ${this.name}, and I am ${this.age} years old.`
+      }
+    },
+    {
+      name: "Jessica",
+      subject: ["Geography", "Government", "French", "History"],
+      age: 27,
+      status: "engaged",
+      class: ["ss1", "ss2", "ss3"],
+      fullTime: false,
+      sex: "female",
+      introduceYourself: function () {
+        return `Hello my name is ${this.name}, and I am ${this.age} years old.`
+      }
+    },
+    {
+      name: "Smith",
+      subject: "Literature-in-english",
+      age: 36,
+      status: "married",
+      class: "ss3",
+      fullTime: true,
+      sex: "male",
+      introduceYourself: function () {
+        return `Hello my name is ${this.name}, and I am ${this.age} years old.`
+      }
+    },
+    {
+      name: "David",
+      subject: "Computer-science",
+      age: 22,
+      status: "can't say!",
+      class: "all classes",
+      fullTime: false,
+      sex: "male",
+      introduceYourself: function () {
+        return `Hello my name is ${this.name}, and I am ${this.age} years old.`
+      }
+    },
+  ];
+
+  for (let i = 0; i < teachers.length; i++) {
+    console.log(teachers[i]);
+  }
+
+  //let revealDetails = teachers.forEach((teacher) => console.log(teacher));
 }
 challenge();
