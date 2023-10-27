@@ -218,6 +218,7 @@ function challenge() {
     console.log(teachers[i]);
   }
 
-  //let revealDetails = teachers.forEach((teacher) => console.log(teacher));
+  
+  teachers.forEach((teacher) => console.log(teacher));
 }
 challenge();
