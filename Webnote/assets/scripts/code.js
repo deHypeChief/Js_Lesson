@@ -32,7 +32,7 @@ const linkData = {
             ]
         },
         {
-            "name": "Advanced Topic",
+            "name": "Going Futher",
             "list": [
                 "Modules",
                 "Oject-Oriented Programing",
@@ -503,6 +503,496 @@ Also they are often used with asynchronous operations to simplify code that deal
                             <p>
                             FizzBuzz is a classic programming challenge. Write a JavaScript program that prints numbers from 1 to 100. For multiples of 3, print "Fizz" instead of the number. For multiples of 5, print "Buzz" instead of the number. For numbers that are multiples of both 3 and 5, print "FizzBuzz." For all other numbers, print the number itself.
                             </p>
+            `
+        },
+        {
+            noteName: "Objects",
+            nextNote: "Classes",
+            noteImage: "../assets/images/test.png",
+            bgPosition: "40px",
+            noteText: `<p>
+            Objects are a fundamental data structure in many programming languages, including JavaScript. They are used to store and organize data in a structured way. Objects can hold various types of data, including properties and methods, making them versatile and powerful.
+        </p>
+        <br><br>
+
+        <h2>1. Object Basics:</h2>
+        <p>
+        An object is an unordered collection of key-value pairs, where each key is a unique identifier (also called a property) for a specific value. <br>
+        Objects can represent real-world entities and their attributes, making them suitable for modeling complex data.
+        </p> 
+<br>
+        <h2>2. Creating Objects:</h2>
+        <p>
+            In JavaScript, you can create an object using object literal notation, which is the most common way:
+        </p><br>
+        <pre class="prettyprint">
+            <code>
+                const person = {
+                    name: "John",
+                    age: 30,
+                    isEmployed: true
+                };
+            </code>
+        </pre><br>
+        <p>
+         Or you can also create objects using the Object constructor:
+        </p><br>
+        <pre class="prettyprint">
+            <code>
+                const person = new Object();
+                person.name = "John";
+                person.age = 30;
+                person.isEmployed = true;
+            </code>
+        </pre><br>
+        
+        <br>
+        <h2>3. Accessing And Modifying  Properties:</h2>
+        <p>
+        You can access and modify object properties using dot notation or bracket notation:
+        </p><br>
+        <pre class="prettyprint">
+            <code>
+                console.log(person.name); // John
+                console.log(person["age"]); // 30
+
+                // Modifying 
+                person.age = 31;
+            </code>
+        </pre><br>
+
+        <br>
+        <h2>4. Adding And Deleting Properties:</h2>
+        <p>
+            You can add and delete new properties in an existing object by assigning a value to a new key:
+        </p><br>
+        <pre class="prettyprint">
+            <code>
+                person.city = "New York"; //adding
+                delete person.isEmployed; //deleting
+            </code>
+        </pre><br>
+
+        <br>
+        <h2>5. Methods:</h2>
+        <p>
+        Objects can also contain methods, which are functions stored as object properties. Methods can perform actions or computations related to the object:
+        </p><br>
+        <pre class="prettyprint">
+            <code>
+            const calculator = {
+                add: function (a, b) {
+                  return a + b;
+                }
+              };
+              const sum = calculator.add(5, 3); // Calls the add method
+            </code>
+        </pre><br>
+
+        <br>
+        <h2>6. Iterating Over Object Properties:</h2>
+        <p>
+        You can loop through an object's properties using for...in or Object.keys():
+        </p><br>
+        <pre class="prettyprint">
+            <code>
+              for (let key in person) {
+                console.log(key, person[key]);
+              }
+            </code>
+        </pre><br>
+
+
+        <br>
+        <h2>7. Object Use Cases::</h2>
+        <p>
+        Objects are used to model complex data structures, such as user profiles, configurations, and more.
+        </p><br>
+        <p>
+        They are commonly used in web development, representing DOM elements, form data, and AJAX requests.
+        </p><br>
+        <p>
+        Objects are integral to object-oriented programming, where they serve as the building blocks for classes and instances
+        </p><br>
+        <p>
+        Objects can be converted to JSON format for data exchange and storage. JSON is a lightweight data-interchange format that is easy to read and write by both humans and machines.
+        </p><br><br><br>
+
+
+        <p>
+        Also JavaScript objects can inherit properties and methods from prototypes. This forms the basis of object-oriented programming in the language.<br>
+        Understanding objects is crucial for effective programming, as they are a core component of many programming languages, enabling developers to structure and manipulate data in a versatile and organized manner.
+        </p><br>
+        <br>
+        `
+        
+        ,
+            challanges: `
+            <h2>Challenge One: <br>Object Key Reversal:</h2>
+            <p>
+            Create a function that converts an array of objects into a single object, where the objects in the array become properties, and their values are the respective elements of the array.
+            </p>
+<br>
+            <h2>Challenge Two: <br>Object Properties Sum:</h2>
+            <p>
+            Create a function that takes an object as an argument and returns the sum of all numeric properties in that object.
+            </p>
+
+            <br>
+            <h2>Challenge Three: <br>Object Intersection:</h2>
+            <p>
+            Create a function that takes two objects as input and returns a new object containing the common key-value pairs found in both input objects.
+            </p>
+            `
+        },
+        {
+            noteName: "Classes",
+            nextNote: "Dom Manipulation and Events",
+            noteImage: "../assets/images/test.png",
+            bgPosition: "40px",
+            noteText: `
+            <p>
+            In programming, classes are a fundamental concept used for creating objects, which are instances of those classes. Classes act as blueprints or templates for objects, defining their structure and behavior. They provide a way to model and encapsulate data and functions into a single unit.
+            </p>
+            
+            <br>
+                <pre class="prettyprint">
+                <code>
+                class MyClass {
+                    constructor(prop1, prop2) {
+                      this.property1 = prop1;
+                      this.property2 = prop2;
+                    }
+                  
+                    method1() {
+                      // Method logic here
+                    }
+                  
+                    method2() {
+                      // Method logic here
+                    }
+                  }
+                </code>
+            </pre><br>
+            <p>
+            -The class keyword is used to define a class, in this case, MyClass. <br> <br>
+            -The constructor method is called when an instance of the class is created. It initializes the class properties. <br> <br>
+            -You can define various methods within the class to perform actions or computations. <br> <br>
+            </p>
+
+            <br>
+        <h2>Attributes (Properties/Fields): </h2>
+        <p>
+        These are variables that store data associated with the class. For example, a Person class might have attributes like name, age, and gender.
+        </p>
+        <br>
+        <h2>Methods (Functions): </h2>
+        <p>
+        Methods define the behavior of objects created from the class. For instance, a Car class could have methods like startEngine() and stopEngine().
+        </p>
+        <br>
+        <h2>Constructor: </h2>
+        <p>
+         The constructor is a special method that gets called when an object is created from the class. It's used to initialize the attributes of the object. In many programming languages, like JavaScript and Python, the constructor is named __init__.
+        </p>
+        <br>
+        <h2>Encapsulation: </h2>
+        <p>
+        Classes allow for encapsulation, which means bundling data and methods together and controlling access to them. It helps protect data from unauthorized access and modification.
+        </p>
+          
+        <br>
+
+        <h2>Classes In Action</h2>
+        <br>
+                <pre class="prettyprint">
+                <code>
+                class Person {
+                    constructor(name, age) {
+                      this.name = name;
+                      this.age = age;
+                    }
+                  
+                    sayHello() {
+                      console.log("Hello, my name is " + name + "and I'm " + age + years old.");
+                    }
+                  }
+                  
+                  // Creating an instance of the Person class
+                  const john = new Person('John', 30);
+                  john.sayHello();
+                </code>
+            </pre><br>
+            <p>
+            We define a Person class with a constructor that takes name and age as parameters.
+            The sayHello method is used to introduce the person
+            </p>
+<br>
+<br>
+<br>
+            <h2>More On Classes</h2>
+            <br><br>
+
+
+            <h2>Inheritance: </h2>
+            <p>
+            JavaScript supports class inheritance, where one class can inherit properties and methods from another. This allows you to create more specialized classes based on a general one. To do this, you use the extends keyword:
+            </p>
+            <br>
+            <pre class="prettyprint">
+            <code>
+            class Student extends Person {
+                constructor(name, age, studentId) {
+                  super(name, age); // Calls the parent class's constructor
+                  this.studentId = studentId;
+                }
+                
+                study() {
+                  console.log(name+' is studying.');
+                }
+              }
+              
+              const alice = new Student('Alice', 20, 'S12345');
+              alice.introduce(); // Output: Hi, I'm Alice and I'm 20 years old.
+              alice.study();    // Output: Alice is studying.
+            </code>
+            
+        </pre><br>
+        
+
+
+            <h2>Static Methods: </h2>
+            <p>
+            You can also create static methods that belong to the class itself, not to instances of the class:
+
+javascript
+            </p>
+            <br>
+                <pre class="prettyprint">
+                <code>
+                class MathHelper {
+                    static square(x) {
+                      return x * x;
+                    }
+                  }
+                  
+                  const result = MathHelper.square(5); // Calling the static method
+                  console.log(result); // Output: 25             
+                </code>
+            </pre><br>
+
+            <h2> Inheritance and Super Keyword: </h2>
+            <p>
+            Inheritance allows you to create a new class based on an existing one. JavaScript supports this through the extends keyword, as demonstrated earlier. When you create a subclass, you can use the super keyword to call the constructor and methods of the parent class.
+            </p>
+            <br>
+                <pre class="prettyprint">
+                <code>
+                class Animal {
+                    constructor(name) {
+                      this.name = name;
+                    }
+                  
+                    speak() {
+                      console.log(name +' makes a sound.');
+                    }
+                  }
+                  
+                  class Dog extends Animal {
+                    speak() {
+                      console.log(name + ' barks.');
+                    }
+                  }
+                  
+                  const myDog = new Dog('Buddy');
+                  myDog.speak(); // Output: Buddy barks.             
+                </code>
+            </pre><br>
+
+
+            <h2>Getters and Setters:
+
+            </h2>
+            <p>
+            You can use getter and setter methods to control access to object properties. Getters are used to retrieve property values, while setters are used to change them.
+            </p>
+            <br>
+                <pre class="prettyprint">
+                <code>
+                class Circle {
+                    constructor(radius) {
+                      this._radius = radius; // Use an underscore to indicate a private property.
+                    }
+                  
+                    get radius() {
+                      return this._radius;
+                    }
+                  
+                    set radius(newRadius) {
+                      if (newRadius > 0) {
+                        this._radius = newRadius;
+                      }
+                    }
+                  }
+                  
+                  const myCircle = new Circle(5);
+                  console.log(myCircle.radius); // Output: 5
+                  myCircle.radius = 10; // Setter
+                  console.log(myCircle.radius); // Output: 10           
+                </code>
+            </pre><br>
+
+
+            <h2>Static Methods and Properties:</h2>
+            <p>
+            Static methods and properties belong to the class itself rather than instances. They are accessed directly on the class, not on objects created from it.
+            </p>
+            <br>
+                <pre class="prettyprint">
+                <code>
+                class MathHelper {
+                    static square(x) {
+                      return x * x;
+                    }
+                  }
+                  
+                  console.log(MathHelper.square(5)); // Output: 25            
+                </code>
+            </pre><br>
+
+
+            <h2>Private Fields and Methods:</h2>
+            <p>
+            In JavaScript, fields and methods can be marked as private by prefixing them with a #. This makes them inaccessible from outside the class.
+            </p>
+            <br>
+                <pre class="prettyprint">
+                <code>
+                class Secret {
+                    #hiddenField = 42;
+                  
+                    #hiddenMethod() {
+                      console.log('This method is private.');
+                    }
+                  
+                    reveal() {
+                      console.log(this.#hiddenField);
+                      this.#hiddenMethod();
+                    }
+                  }
+                  
+                  const secretInstance = new Secret();
+                  secretInstance.reveal(); // Outputs 42 and "This method is private."
+                  console.log(secretInstance.#hiddenField); // Error: Cannot access private field.           
+                </code>
+            </pre><br>
+
+            <h2>Mixins:</h2>
+            <p>
+            Mixins are a way to combine multiple classes into one. They allow you to reuse methods and properties from various classes, providing flexibility in code organization.
+            </p>
+            <br>
+                <pre class="prettyprint">
+                <code>
+                const Serializable = {
+                    serialize() {
+                      return JSON.stringify(this);
+                    },
+                    deserialize(data) {
+                      return JSON.parse(data);
+                    }
+                  };
+                  
+                  class Person {
+                    constructor(name) {
+                      this.name = name;
+                    }
+                  }
+                  
+                  class SerializablePerson extends Person {
+                    constructor(name) {
+                      super(name);
+                    }
+                  }
+                  
+                  Object.assign(SerializablePerson.prototype, Serializable);
+                  
+                  const person = new SerializablePerson('Alice');
+                  const serializedData = person.serialize();
+                  console.log(serializedData);
+                  const deserializedPerson = new SerializablePerson('Bob');
+                  deserializedPerson.deserialize(serializedData);            
+                </code>
+            </pre><br>
+
+            `,
+            challanges: `
+            <h2>Challenge One:</h2>
+            <p>
+            Develop a class called BankAccount with attributes for balance and account number. Include methods for deposit, withdrawal, and checking the balance.
+            </p>
+            <br>
+            <h2>Challenge Two:</h2>
+            <p>
+            Create a class Employee with attributes like name, job title, and salary. Include a method to give a raise to an employee.
+            </p>
+            <br>
+            <h2>Challenge Three:</h2>
+            <p>
+            Create two classes, Animal and Bird. The Animal class should have properties like name and a speak method that logs a generic sound. The Bird class should extend Animal and override the speak method to make a bird-specific sound. Create instances of both classes and demonstrate inheritance and method overriding.
+
+
+            </p>
+            <br>
+            <h2>Challenge Four:</h2>
+            <p>
+            Build a Temperature class with a private temperature property in Celsius. Implement a getter to convert the temperature to Fahrenheit and a setter to allow setting the temperature in Celsius. Ensure the temperature cannot go below -100°C or above 100°C.
+            </p>
+            <h2>Challenge Five:</h2>
+            <p>
+            Develop a mixin called Logger with methods for logging messages. Create a class Product with properties like name and price. Use the Logger mixin to add logging functionality to the Product class, allowing it to log messages when a new product is created or its details are updated.
+            </p>
+
+            <br>
+            <br>
+            <h2>Challenge Six: Online Store Inventory</h2>
+            <p>
+            Create a class-based inventory system for an online store. The system should incorporate several advanced class concepts, including inheritance, getters and setters, static methods and properties, and private fields and methods.
+            </p>
+
+
+            <p>
+            
+            -Create a base class called Product with the following properties:
+            name (string): The name of the product.<br>
+            price (number): The price of the product.<br>
+            id (string): A unique identifier for the product (generate this automatically).<br>
+            <br>
+            -Implement a static property in the Product class called totalProducts to keep track of the total number of products created.
+<br><br>
+            -Implement a private field in the Product class to store the product's cost price.
+<br><br>
+            -Create a getter for the cost price field that calculates the cost price as 70% of the selling price (price). This demonstrates the use of getters to derive values.
+<br><br>
+            -Implement a setter for the selling price (price) to ensure that it cannot be set to a value less than the cost price. If an attempt is made to set the selling price less than the cost price, throw an error.
+<br><br>
+            -Create a subclass called Electronics that extends Product. Add an additional property, warrantyMonths, which represents the warranty period of the electronic product in months.
+<br><br>
+            -Implement a mixin named Logger with a private field for logging and a public method to log messages. Mix this into both the Product and Electronics classes to demonstrate the use of mixins.
+            
+            <br>
+            <br>
+            <br>
+            --Challenges:--
+            <br><br>
+
+--Create instances of both the Product and Electronics classes, ensuring that they correctly handle the cost price calculation, price validation, and logging of actions.
+<br><br>
+
+--Create multiple instances of Product and Electronics classes, logging actions for each instance, and keeping track of the total number of products using the static property.
+<br><br>
+
+            </p>
             `
         }
     ]
