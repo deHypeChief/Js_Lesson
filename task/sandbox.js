@@ -73,6 +73,95 @@ function sandbox() {
     }
   
     console.log(profile.doSmth());*/
+  console.log("\n\n\n First Object Challenge\n\n\n");
+    let subObjArray = [
+      {
+        brand: "toyota",
+        model: "camry",
+        year: 2022,
+        type: "XV70",
+        price: "$26,420",
+      },
+      {
+        colors: ["red", "black", "silver", "gray", "blue"],
+        isAutomatic: true,
+        rearCamera: true,
+        doubleExhaust: true,
+      },
+      {
+        engine: "301-HP V6",
+        autoPilot: false,
+        electricVehicle: false,
+      },
+    ];
+
+  function createCar(array) {
+    let car = {};
+    array.forEach(function (item) {
+      for (const key in item) {
+        car[key] = item[key];
+      }
+    });
+
+    console.log(car);
+  }
+
+  createCar(subObjArray);
+
+  console.log("\n\n\n Challenge two - Calculate all sum\n\n\n");
+
+  let figures = {
+    firstNum: 1,
+    secondNum: 2,
+    thirdNum: 9,
+    dataType: "numbers",
+    length: 3,
+    highestNumber: 9,
+    isNumber: true,
+  }
+
+  function calculateAllSum(obj) {
+    let sum = 0;
+    for (let key in obj) {
+      if (typeof(obj[key]) === "number") {
+        sum += obj[key];
+      }
+    }
+
+    console.log(sum);
+  }
+
+  calculateAllSum(figures);
+
+  console.log("\n\n\n Third Challenge\n\n\n");
+
+  const firstObj = {
+    name: "Ade",
+    age: 30,
+    location: "texas",
+    length: 3,
+  }
+
+  const secondObj = {
+    name: "Tomi",
+    age: 30,
+    country: "NGA",
+    length: 3,
+  }
+
+  function checkSamePairs(firstObj, secondObj) {
+    let sameProp = {};
+    for (let key in firstObj) {
+      if (firstObj[key] === secondObj[key]) {
+        sameProp[key] = key;
+      } else {
+        delete sameProp[key];
+      }
+      console.log(sameProp[key]);
+    }
+  }
+
+  checkSamePairs(firstObj, secondObj);
 }
 sandbox();
 //node sandbox.js

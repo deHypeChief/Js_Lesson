@@ -218,7 +218,7 @@ function challenge() {
     console.log(teachers[i]);
   }
 
-  
   teachers.forEach((teacher) => console.log(teacher));
 }
+
 challenge();
